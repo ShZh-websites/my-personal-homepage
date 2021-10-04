@@ -1,0 +1,16 @@
+# .gitignore for yarn
+# Copied from official website
+# Not using zero-install
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# node_modules
+node_modules/
+
+# Jetbrain's .gitignore
+.idea/
