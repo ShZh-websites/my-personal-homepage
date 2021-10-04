@@ -5,13 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./tailwind.css">
-  <!-- Grab title from the page data and dump it here -->
   <title>{{ title }}</title>
 </head>
 <body>
-  <!-- Grab the content from the page data, dump it here, and mark it as safe -->
-  <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-  {{ content | safe }}
-  <div class="rounded-full h-24 w-24 flex items-center justify-center...">Circle</div>
+  <header class="mx-48">
+    <nav class="p-3 flex content-center space-x-1">
+      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Home</a>
+      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Projects</a>
+      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Publication</a>
+      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">CV</a>
+      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">About</a>
+    </nav>
+  </header>
+  <hr/>
+
+  <main class="mx-48">
+    {{ content | safe }}
+  </main>
+
+  <hr/>
+
+  <footer class="mx-48 bottom-0 bg-black h-16">
+
+  </footer>
 </body>
 </html>
