@@ -10,23 +10,29 @@
   <title>{{ title }}</title>
 </head>
 <body class="h-full">
-  <header class="h-14 xl:mx-48">
-    <div x-data="{isCollapsed: true}">
-      <nav class="pt-3 pl-10 space-x-1" :class="isCollapsed? 'inline-flex': ''">
-        <a href="/" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
-          <p>Home</p>
+  <header class="xl:mx-48">
+    <div class="transition-all" x-data="{isCollapsed: true}">
+      <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" @click="isCollapsed = !isCollapsed">
+        <span class="block bg-black" :class="!isCollapsed? 'transform rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: center"></span>
+        <span class="block bg-black" :class="!isCollapsed? 'transform -rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: 13% 0"></span>
+        <span class="block bg-black" :class="{'hidden': !isCollapsed}" style="height: 2px; width: 22px; margin-top: 4px"></span>
+      </button>
+
+      <nav class="pl-9 mb-2 space-x-1 sm:pl-16 sm:pt-3 sm:inline-flex" :class="isCollapsed? 'hidden' : 'block'">
+        <a href="/">
+          <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Home</p>
         </a>
-        <a href="/projects.html" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
-          <p>Projects</p>
+        <a href="/projects.html">
+          <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Projects</p>
         </a>
-        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
-          <p>Publication</p>
+        <a href="#">
+          <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Publication</p>
         </a>
-        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
-          <p>CV</p>
+        <a href="#">
+          <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">CV</p>
         </a>
-        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
-          <p>About</p>
+        <a href="#">
+          <p class="text-md font-light px-3 pb-3 sm:py-1.5 hover:text-blue-500">About</p>
         </a>
       </nav>
     </div>
