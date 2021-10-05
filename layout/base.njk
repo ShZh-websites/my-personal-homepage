@@ -6,17 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/tailwind.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
   <title>{{ title }}</title>
 </head>
 <body class="h-full">
   <header class="h-14 xl:mx-48">
-    <nav class="inline-flex pt-3 pl-10 space-x-1">
-      <a href="/" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Home</a>
-      <a href="/projects.html" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Projects</a>
-      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Publication</a>
-      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">CV</a>
-      <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">About</a>
-    </nav>
+    <div x-data="{isCollapsed: true}">
+      <nav class="pt-3 pl-10 space-x-1" :class="isCollapsed? 'inline-flex': ''">
+        <a href="/" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
+          <p>Home</p>
+        </a>
+        <a href="/projects.html" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
+          <p>Projects</p>
+        </a>
+        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
+          <p>Publication</p>
+        </a>
+        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
+          <p>CV</p>
+        </a>
+        <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">
+          <p>About</p>
+        </a>
+      </nav>
+    </div>
 
     <a class="absolute top-0 right-0 h-14 z-10"
        target="_blank"
