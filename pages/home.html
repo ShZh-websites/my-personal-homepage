@@ -3,16 +3,16 @@ layout: base.njk
 title: ShZh's Homepage
 permalink: "index.html"
 ---
-<div class="flex justify-evenly">
-    <figure class="flex flex-col pt-10">
-        <img class="rounded-full w-80" src="../assets/me.png" alt="My avatar"/>
+<div class="flex-1 md:flex md:justify-center items-center">
+    <figure class="flex flex-col pt-10 pl-3">
+        <img class="rounded-full w-80 mx-auto" src="../assets/me.png" alt="My avatar"/>
         <figcaption>
             <h1 class="text-5xl font-light text-center pt-5">Zhihao Shen</h1>
-            <p class="text-xl text-gray-400 text-center pt-4 font-extralight">Undergraduate student from
+            <p class="text-xl text-gray-400 text-center pt-7 md:pt-4 font-extralight">Undergraduate student from
                 <a href="https://www.whu.edu.cn/" class="text-black font-medium transition duration-300 ease-in-out hover:text-blue-600">@WHU</a>
             </p>
         </figcaption>
-        <ul class="flex justify-center pt-3">
+        <ul class="flex justify-center pt-7 md:pt-3">
             <li class="ml-5">
                 <a class="text-gray-600 transition duration-300 ease-in-out hover:text-blue-500" href="mailto:zhihaoshen7@gmail.com">
                     <!-- From Font-awesome -->
@@ -38,9 +38,9 @@ permalink: "index.html"
         </ul>
     </figure>
 
-    <div>
-        <h1 class="font-serif text-8xl pt-5 underline">Biography</h1>
-        <pre class="pt-10">A student from WHU and now is majoring CST,
+    <div class="my-auto md:ml-10 lg:ml-20">
+        <h1 class="font-serif underline text-5xl pt-20 text-center md:text-6xl lg:text-8xl md:pt-5">Biography</h1>
+        <pre class="text-center pt-10 pl-3 text-sm md:text-base md:text-left">A student from WHU and now is majoring CST,
 devoting himself to be a community leader,
 and hope to change the world by his code.
 
@@ -50,11 +50,10 @@ Also interested in Artificial Intelligence.
 
 Do not have a beautiful GPA.
 Love reinventing wheels to learn.
-Have broad knowledge but average understanding.
+Have broad knowledge but average depth.
 
 Want to enter a higher level of education,
 and contribute to the development of CS.
-
-        </pre>
+    </pre>
     </div>
 </div>
