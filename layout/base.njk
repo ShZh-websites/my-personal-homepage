@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/tailwind.css">
   <title>{{ title }}</title>
 </head>
-<body>
+<body class="h-full">
   <header class="h-16 md:mx-48">
     <nav class="inline-flex pt-3 pl-10 space-x-1">
       <a href="/" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">Home</a>
@@ -18,7 +18,7 @@
       <a href="#" class="rounded-md text-md font-light px-3 py-1.5 hover:bg-blue-300 hover:text-white">About</a>
     </nav>
 
-    <a class="absolute top-0 right-0 h-16"
+    <a class="absolute top-0 right-0 h-16 z-10"
        target="_blank"
        href="https://github.com/ShZh-websites/my-personal-homepage"
        aria-label="View source on Github"
@@ -32,11 +32,11 @@
   </header>
   <hr/>
 
-  <main class="mx-48">
+  <main class="min-h-full -mb-16 -mt-16 pt-16">
     {{ content | safe }}
   </main>
 
-  <footer class="h-16 pt-5 w-full">
+  <footer class="pt-3 w-full">
     <hr/>
     <p class="text-center text-gray-500 pt-3">Copyright ©️ 2021 ShZh7</p>
   </footer>
