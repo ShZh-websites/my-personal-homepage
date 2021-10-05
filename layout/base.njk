@@ -11,7 +11,7 @@
 </head>
 <body class="h-full">
   <header class="xl:mx-48">
-    <div class="transition-all" x-data="{isCollapsed: true}">
+    <div x-data="{isCollapsed: true}">
       <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" @click="isCollapsed = !isCollapsed">
         <span class="block bg-black" :class="!isCollapsed? 'transform rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: center"></span>
         <span class="block bg-black" :class="!isCollapsed? 'transform -rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: 13% 0"></span>
