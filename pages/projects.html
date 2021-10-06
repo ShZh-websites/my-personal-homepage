@@ -4,28 +4,58 @@ title: ShZh | Projects
 permalink: "projects.html"
 ---
 
-<div class="mx-auto">
-    <h1 class="py-8 underline font-serif text-center text-4xl md:text-6xl">Toys</h1>
-    <blockquote class="pb-14 ml-20 font-serif text-gray-500 text-sm">
-        When I can't create, I don't understand. <br/>
-        <cite class="float-right">- Richard Feynman</cite>
-    </blockquote>
+<div>
+    <div>
+        <h1 class="py-8 transition-all duration-300 underline font-serif text-center text-4xl md:text-6xl overflow-hidden">Toys</h1>
+        <blockquote class="block font-serif text-gray-500 text-center text-xs md:text-sm transition-all duration-300">
+            When I can't create, I don't understand.
+            <br class="md:hidden"/>
+            &nbsp;&nbsp;<cite>- Richard Feynman</cite>
+        </blockquote>
 
-    <ul>
-        <template x-data x-for="toy in data.projects.toys">
-            <li>
-                <figure class="rounded-xl shadow-md w-60">
-                    <img :src="toy.img" class="h-40 w-full" alt="project1">
-                    <figcaption class="p-6 w-60">
-                        <h1 class="text-2xl text-center">
-                            <a class="transition duration-300 ease-in-out hover:text-blue-500"
-                               :href="toy.url" x-text="toy.name"></a>
-                        </h1>
-                        <p class="pt-6 text-center" x-text="toy.summary"></p>
-                    </figcaption>
-                </figure>
-            </li>
-        </template>
-    </ul>
+        <ul class="flex flex-wrap justify-evenly mx-72">
+            <template x-data x-for="toy in data.projects.toys">
+                <li class="mt-5">
+                    <figure class="rounded-xl shadow-md w-60">
+                        <img :src="toy.img? toy.img : '/assets/github.png'" :alt="toy.name" class="h-52">
+                        <hr/>
+                        <figcaption class="p-3 w-60">
+                            <h1 class="text-2xl text-center font-serif">
+                                <a class="transition duration-300 ease-in-out hover:text-blue-500"
+                                   :href="toy.url" x-text="toy.name"></a>
+                            </h1>
+                            <p class="mx-auto my-3 w-40 text-center text-sm" x-text="toy.summary"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </template>
+        </ul>
+    </div>
+
+    <div>
+        <h1 class="py-8 transition-all duration-300 underline font-serif text-center text-4xl md:text-6xl overflow-hidden">Wheels</h1>
+        <blockquote class="block font-serif text-gray-500 text-center text-xs md:text-sm transition-all duration-300">
+            In software development, reinventing the wheel is often necessary
+            <br class="md:hidden"/>
+            &nbsp;&nbsp;<cite>- Wikipedia</cite>
+        </blockquote>
+
+        <ul class="flex flex-wrap justify-evenly mx-72">
+            <template x-data x-for="toy in data.projects.wheels">
+                <li class="mt-5">
+                    <figure class="rounded-xl shadow-md w-60">
+                        <img :src="toy.img? toy.img : '/assets/github.png'" :alt="toy.name" class="h-50 w-full">
+                        <hr/>
+                        <figcaption class="p-3 w-60">
+                            <h1 class="text-2xl text-center font-serif">
+                                <a class="transition duration-300 ease-in-out hover:text-blue-500"
+                                   :href="toy.url" x-text="toy.name"></a>
+                            </h1>
+                            <p class="mx-auto my-3 w-40 text-center text-sm" x-text="toy.summary"></p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </template>
+        </ul>
+    </div>
 </div>
-

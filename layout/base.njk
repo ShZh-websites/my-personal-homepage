@@ -51,7 +51,7 @@
   </header>
   <hr/>
 
-  <main class="flex min-h-full -mb-16 -mt-16 py-16">
+  <main class="flex justify-center min-h-full -mb-16 -mt-16 py-16">
     {{ content | safe }}
   </main>
 
@@ -66,7 +66,8 @@
   <script>
     window.data = {
       projects: {
-        toys: {{ toys | dump | safe }}
+        toys: {{ toys | dump | safe }},
+        wheels: {{ wheels | dump | safe }}
       }
     };
   </script>

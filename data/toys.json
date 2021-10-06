@@ -1,8 +1,18 @@
 [
   {
-    "img": "/assets/me.png",
     "url": "https://github.com/ShZh-Playground/tiny-language",
     "name": "Tiny Interpreter",
     "summary": "\uD83E\uDD13 Tiny OOP language based on JVM."
+  },
+  {
+    "img": "/assets/react.png",
+    "url": "https://github.com/ShZh-Playground/tiny-virtual-dom",
+    "name": "Tiny VDOM",
+    "summary": "\uD83C\uDF84 TS virtual DOM implementation."
+  },
+  {
+    "url": "https://github.com/ShZh-Playground/tiny-SQL",
+    "name": "Tiny DB",
+    "summary": "\uD83C\uDFE0 A shabby relational database."
   }
 ]
