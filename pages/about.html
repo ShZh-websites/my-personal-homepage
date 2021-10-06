@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: ShZh | About
+permalink: "about.html"
+---
+<div>
+    <h1 class="pt-8 transition-all duration-300 underline font-serif text-center text-4xl md:text-6xl">About</h1>
+    <p class="pt-6 text-center">I could not finish this website without these tools and platforms.</p>
+
+    <div class="relative w-32 h-32 bg-black overflow-hidden"
+         x-data="{ hover: false }" @mouseover="hover = true" @mouseout="hover = false">
+        <div class="absolute w-32 h-32 opacity-50 bg-black transition-top duration-300
+                    flex justify-center items-center"
+             :class="!hover? '-top-32' : 'top-0'"  x-transition>
+            <p class="font-serif text-2xl text-white">Alpine.js</p>
+        </div>
+        <img class="w-32 h-32 object-fill" src="assets/alpinejs.png" alt="alpine.js">
+    </div>
+</div>
