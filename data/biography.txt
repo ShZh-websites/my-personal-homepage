@@ -1,0 +1,14 @@
+`A student from WHU and now is majoring CST,
+devoting himself to be a community leader,
+and hope to change the world by his code.
+
+Particularly good at web design.
+One self-proclaimed full-stack engineer.
+Also interested in Artificial Intelligence.
+
+Do not have a beautiful GPA.
+Love reinventing wheels to learn.
+Have broad knowledge but average depth.
+
+Want to enter a higher level of education,
+and contribute to the development of CS.`
