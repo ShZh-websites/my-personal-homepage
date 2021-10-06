@@ -1,4 +1,4 @@
-`A student from WHU and now is majoring CST,
+A student from WHU and now is majoring CST,
 devoting himself to be a community leader,
 and hope to change the world by his code.
 
@@ -11,4 +11,4 @@ Love reinventing wheels to learn.
 Have broad knowledge but average depth.
 
 Want to enter a higher level of education,
-and contribute to the development of CS.`
+and contribute to the development of CS.
