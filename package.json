@@ -8,9 +8,11 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "inline-remote-assets": "^0.7.0",
     "tailwindcss": "^2.2.16"
   },
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production tailwindcss -o dist/tailwind.css && eleventy && inline-remote-assets 'dist/**/*.html'"
   }
 }
