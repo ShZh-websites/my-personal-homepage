@@ -5,15 +5,25 @@ permalink: "about.html"
 ---
 <div>
     <h1 class="pt-8 transition-all duration-300 underline font-serif text-center text-4xl md:text-6xl">About</h1>
-    <p class="pt-6 text-center">I could not finish this website without these tools and platforms.</p>
+    <p class="mt-6 mb-10 text-center">I could not finish this website without these tools and platforms.</p>
 
-    <div class="relative w-32 h-32 bg-black overflow-hidden"
-         x-data="{ hover: false }" @mouseover="hover = true" @mouseout="hover = false">
-        <div class="absolute w-32 h-32 opacity-50 bg-black transition-top duration-300
+    <div class="mx-20 min-w-max">
+        <div class="grid gap-3 grid-cols-2 auto-cols-min md:grid-cols-3">
+            <template x-data x-for="item in data.about">
+                <div class="relative w-28 h-28 md:w-32 md:h-32
+                            bg-white overflow-hidden cursor-pointer"
+                     x-data="{ hover: false }" @mouseover="hover = true" @mouseout="hover = false"
+                     @click="window.open(item.url, '_blank')"
+                >
+                    <div class="absolute w-28 h-28 md:w-32 md:h-32
+                                opacity-50 bg-black transition-top duration-300
                     flex justify-center items-center"
-             :class="!hover? '-top-32' : 'top-0'"  x-transition>
-            <p class="font-serif text-2xl text-white">Alpine.js</p>
+                         :class="!hover? '-top-32' : 'top-0'">
+                        <p class="font-serif text-2xl text-white" x-text="item.title"></p>
+                    </div>
+                    <img class="object-fill w-28 h-28 md:w-32 md:h-32" :src="item.img" :alt="item.title">
+                </div>
+            </template>
         </div>
-        <img class="w-32 h-32 object-fill" src="assets/alpinejs.png" alt="alpine.js">
     </div>
 </div>

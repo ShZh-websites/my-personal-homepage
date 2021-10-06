@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://alpinejs.dev/",
+    "img": "assets/alpinejs.png",
+    "title": "Alpine.js"
+  },
+  {
+    "url": "https://tailwindcss.com/",
+    "img": "assets/tailwindcss.png",
+    "title": "tailwindcss"
+  },
+  {
+    "url": "https://www.netlify.com/",
+    "img": "assets/netlify.png",
+    "title": "Netlify"
+  },
+  {
+    "url": "https://www.11ty.dev/",
+    "img": "assets/11ty.png",
+    "title": "11ty"
+  },
+  {
+    "url": "https://porkbun.com/",
+    "img": "assets/porkbun.png",
+    "title": "porkbun"
+  },
+  {
+    "url": "https://www.cloudflare.com/",
+    "img": "assets/Cloudflare.png",
+    "title": "Cloudflare"
+  }
+]
