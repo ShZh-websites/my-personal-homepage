@@ -65,6 +65,9 @@
 
   <script>
     window.data = {
+      projects: {
+        toys: {{ toys | dump | safe }}
+      }
     };
   </script>
 </body>
