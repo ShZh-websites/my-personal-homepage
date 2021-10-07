@@ -32,11 +32,11 @@ You'd better click [shzh.me](https://shzh.me) to see the full view of my homepag
 
 Lighthouse score(you may run this test locally in your Chrome browser):
 
-<img src="assets/lighthouse.png" style="zoom:50%;" />
+<img src="assets/lighthouse.png" width=600px />
 
 Google's [PageSpeed Inside](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fshzh.me%2F&tab=desktop) score:
 
-<img src="./assets/page_speed_inside.png" style="zoom:50%;" />
+<img src="./assets/page_speed_inside.png" height=225px />
 
 
 
@@ -54,9 +54,9 @@ These scripts are probably useful when contributing.
 
 There are more features and optimizaiton to be done.
 
-- [ ] i18n support. (#1)
-- [ ] Dark mode support. (#2)
-- [ ] Rewrite hamburger button and add animation. (#3)
+- [ ] i18n support. ([#1](https://github.com/ShZh-websites/my-personal-homepage/issues/1))
+- [ ] Dark mode support. ([#2](https://github.com/ShZh-websites/my-personal-homepage/issues/2))
+- [ ] Rewrite hamburger button and add animation. ([#3](https://github.com/ShZh-websites/my-personal-homepage/issues/3))
 
 
 
