@@ -1,6 +1,6 @@
 module.exports = function(eleventyConfig) {
-    // Copy `assets/` to output directory
-    eleventyConfig.addPassthroughCopy({"assets": "assets"});
+    // Copy `public/` to output directory
+    eleventyConfig.addPassthroughCopy({"public": "public"});
 
     // Parse .txt file as data input
     eleventyConfig.dataExtensions = new Map([

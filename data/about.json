@@ -1,32 +1,32 @@
 [
   {
     "url": "https://alpinejs.dev/",
-    "img": "assets/about/alpinejs.png",
+    "img": "public/about/alpinejs.png",
     "title": "Alpine.js"
   },
   {
     "url": "https://tailwindcss.com/",
-    "img": "assets/about/tailwindcss.png",
+    "img": "public/about/tailwindcss.png",
     "title": "tailwindcss"
   },
   {
     "url": "https://www.netlify.com/",
-    "img": "assets/about/netlify.png",
+    "img": "public/about/netlify.png",
     "title": "Netlify"
   },
   {
     "url": "https://www.11ty.dev/",
-    "img": "assets/about/11ty.png",
+    "img": "public/about/11ty.png",
     "title": "11ty"
   },
   {
     "url": "https://porkbun.com/",
-    "img": "assets/about/porkbun.png",
+    "img": "public/about/porkbun.png",
     "title": "porkbun"
   },
   {
     "url": "https://www.cloudflare.com/",
-    "img": "assets/about/Cloudflare.png",
+    "img": "public/about/Cloudflare.png",
     "title": "Cloudflare"
   }
 ]
