@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="ShZh's homepage">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/tailwind.css">
@@ -12,7 +13,8 @@
 <body class="h-full">
   <header class="xl:mx-48">
     <div x-data="{isCollapsed: true}">
-      <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" @click="isCollapsed = !isCollapsed">
+      <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" aria-label="navigation"
+              @click="isCollapsed = !isCollapsed">
         <span class="block bg-black" :class="!isCollapsed? 'transform rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: center"></span>
         <span class="block bg-black" :class="!isCollapsed? 'transform -rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: 13% 0"></span>
         <span class="block bg-black" :class="{'hidden': !isCollapsed}" style="height: 2px; width: 22px; margin-top: 4px"></span>
@@ -38,7 +40,7 @@
     </div>
 
     <a class="absolute top-0 right-0 h-14 z-10"
-       target="_blank"
+       target="_blank" rel="noopener"
        href="https://github.com/ShZh-websites/my-personal-homepage"
        aria-label="View source on Github"
     >
