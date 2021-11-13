@@ -18,13 +18,13 @@
 
 # Overview
 
-I carefully choose the [tailwindcss](https://tailwindcss.com/) and [alpine.js](https://alpinejs.dev/) to writing **zero CSS and Javascript**.
+I'm always wandering how to **combine better DX and UX** when making your personal website. Here is the best solution I've come up with so far.
 
-All these decisions are for **heigh performance, low lantency and better SEO**.
+For DX: [TailwindCSS](https://tailwindcss.com/) and [Alpine.js](https://alpinejs.dev/) are chosen so that almost **zero CSS and Javascript** are needed. Always select deployment platform with **CI/CD**, like Netlify and Vercel. Throw away framework like Vue and React. It's too heavy for your lightweight web application. **SSG** is all you need.
 
-The depolyment of the website **uses CI/CD**, so the UI will change from time to time.
+For UX: Other than key images like avatar which **directly embeded in HTML**, all of Images are **shrinked properly** and encoded with the new generation image format—**AVIF**, which will compress your images as much as possible. It doesn't matter if your browser does not support AVIF(such as browsers use Webkit), cause **PNG format is the fallback**. All images are hosting at [cloudinary](https://cloudinary.com/) to get benefit of its **powerful CDN**.
 
-You'd better click [shzh.me](https://shzh.me) to see the full view of my homepage.
+ You may click [shzh.me](https://shzh.me) to see the full view of my homepage.
 
 
 
