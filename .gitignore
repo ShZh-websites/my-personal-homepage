@@ -19,5 +19,5 @@ node_modules/
 dist/
 
 # Ignore image files in public folder
-public/*.png
-public/*.avif
+public/**/*.png
+public/**/*.avif
