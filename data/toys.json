@@ -5,7 +5,10 @@
     "summary": "\uD83E\uDD13 Tiny OOP language based on JVM."
   },
   {
-    "img": "/public/react",
+    "img": {
+      "url": "https://res.cloudinary.com/shzh7/image/upload/v1636808020/homepage/react_pgxwul.avif",
+      "fallback": "https://res.cloudinary.com/shzh7/image/upload/v1636808020/homepage/react_myacnl.png"
+    },
     "url": "https://github.com/ShZh-Playground/tiny-virtual-dom",
     "name": "Tiny VDOM",
     "summary": "\uD83C\uDF84 TS virtual DOM implementation."

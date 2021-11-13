@@ -1,32 +1,32 @@
 [
   {
     "url": "https://alpinejs.dev/",
-    "img": "public/about/alpinejs.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/alpinejs_beassi.png",
     "title": "Alpine.js"
   },
   {
     "url": "https://tailwindcss.com/",
-    "img": "public/about/tailwindcss.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/tailwindcss_pce6jy.png",
     "title": "tailwindcss"
   },
   {
     "url": "https://www.netlify.com/",
-    "img": "public/about/netlify.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/netlify_bi1mqg.png",
     "title": "Netlify"
   },
   {
     "url": "https://www.11ty.dev/",
-    "img": "public/about/11ty.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/11ty_hd1fpn.png",
     "title": "11ty"
   },
   {
     "url": "https://porkbun.com/",
-    "img": "public/about/porkbun.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/porkbun_ovib9u.png",
     "title": "porkbun"
   },
   {
     "url": "https://www.cloudflare.com/",
-    "img": "public/about/Cloudflare.png",
+    "img": "https://res.cloudinary.com/shzh7/image/upload/v1636808985/homepage/cloudflare_mpkfkw.png",
     "title": "Cloudflare"
   }
 ]
