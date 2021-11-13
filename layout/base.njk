@@ -11,25 +11,25 @@
   <title>{{ title }}</title>
 </head>
 <body class="h-full">
-  <header x-cloak class="xl:mx-48">
+  <header class="xl:mx-48">
     <div x-data="{isCollapsed: true}">
       <button class="relative mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" aria-label="navigation"
               @click="isCollapsed = !isCollapsed">
         <span class="absolute block bg-black"
-              :class="{'hidden': !isCollapsed}"
+              x-show="isCollapsed"
               style="height: 2px; width: 22px; top: 4px"></span>
-        <span class="absolute block bg-black"
+        <span class="absolute block bg-black transition-transform"
               :class="!isCollapsed? 'transform -rotate-45' : ''"
               style="height: 2px; width: 22px; top: 10px;"></span>
-        <span class="absolute block bg-black" 
+        <span class="absolute block bg-black transition-transform"
               :class="!isCollapsed? 'transform rotate-45' : ''"
               style="height: 2px; width: 22px; top: 10px;"></span>
         <span class="absolute block bg-black"
-              :class="{'hidden': !isCollapsed}"
+              x-show="isCollapsed"
               style="height: 2px; width: 22px; top: 16px;"></span>
       </button>
 
-      <nav :class="isCollapsed? 'hidden' : 'block'"
+      <nav x-show="!isCollapsed"
            class="pl-9 mb-2 space-x-1 sm:pl-16 sm:pt-3 sm:inline-flex" >
         <a href="/">
           <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Home</p>
