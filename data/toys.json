@@ -5,7 +5,7 @@
     "summary": "\uD83E\uDD13 Tiny OOP language based on JVM."
   },
   {
-    "img": "/public/react.avif",
+    "img": "/public/react",
     "url": "https://github.com/ShZh-Playground/tiny-virtual-dom",
     "name": "Tiny VDOM",
     "summary": "\uD83C\uDF84 TS virtual DOM implementation."
