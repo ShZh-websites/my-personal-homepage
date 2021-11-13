@@ -1,6 +1,6 @@
 [
   {
-    "img": "/public/mandlebrot.png",
+    "img": "/public/mandlebrot.avif",
     "url": "https://github.com/ShZh-libraries/szimg",
     "name": "szimg",
     "summary": "\uD83D\uDDBC Light-weight bitmaps' encoding library."
