@@ -11,7 +11,7 @@
   <title>{{ title }}</title>
 </head>
 <body class="h-full">
-  <header class="xl:mx-48">
+  <header x-cloak class="xl:mx-48">
     <div x-data="{isCollapsed: true}">
       <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" aria-label="navigation"
               @click="isCollapsed = !isCollapsed">
@@ -20,7 +20,8 @@
         <span class="block bg-black" :class="{'hidden': !isCollapsed}" style="height: 2px; width: 22px; margin-top: 4px"></span>
       </button>
 
-      <nav class="pl-9 mb-2 space-x-1 sm:pl-16 sm:pt-3 sm:inline-flex" :class="isCollapsed? 'hidden' : 'block'">
+      <nav :class="isCollapsed? 'hidden' : 'block'"
+           class="pl-9 mb-2 space-x-1 sm:pl-16 sm:pt-3 sm:inline-flex" >
         <a href="/">
           <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Home</p>
         </a>
