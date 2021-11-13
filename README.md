@@ -18,11 +18,9 @@
 
 # Overview
 
-I'm always wandering how to **combine better DX and UX** when making your personal website. Here is the best solution I've come up with so far.
+I'm always wandering how to **combine better DX and UX** when making your personal website. 
 
-For DX: [TailwindCSS](https://tailwindcss.com/) and [Alpine.js](https://alpinejs.dev/) are chosen so that almost **zero CSS and Javascript** are needed. Always select deployment platform with **CI/CD**, like Netlify and Vercel. Throw away framework like Vue and React. It's too heavy for your lightweight web application. **SSG** is all you need.
-
-For UX: Other than key images like avatar which **directly embeded in HTML**, all of Images are **shrinked properly** and encoded with the new generation image format—**AVIF**, which will compress your images as much as possible. It doesn't matter if your browser does not support AVIF(such as browsers use Webkit), cause **PNG format is the fallback**. All images are hosting at [cloudinary](https://cloudinary.com/) to get benefit of its **powerful CDN**.
+[Here](docs/) is the best solution I've come up with so far.
 
  You may click [shzh.me](https://shzh.me) to see the full view of my homepage.
 
