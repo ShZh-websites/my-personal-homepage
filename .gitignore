@@ -17,3 +17,7 @@ node_modules/
 
 # 11ty output files
 dist/
+
+# Ignore image files in public folder
+public/*.png
+public/*.avif
