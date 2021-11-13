@@ -13,11 +13,20 @@
 <body class="h-full">
   <header x-cloak class="xl:mx-48">
     <div x-data="{isCollapsed: true}">
-      <button class="mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" aria-label="navigation"
+      <button class="relative mt-4 mb-4 ml-12 sm:hidden" style="height: 25px" aria-label="navigation"
               @click="isCollapsed = !isCollapsed">
-        <span class="block bg-black" :class="!isCollapsed? 'transform rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: center"></span>
-        <span class="block bg-black" :class="!isCollapsed? 'transform -rotate-45' : ''" style="height: 2px; width: 22px; margin-top: 4px; transform-origin: 13% 0"></span>
-        <span class="block bg-black" :class="{'hidden': !isCollapsed}" style="height: 2px; width: 22px; margin-top: 4px"></span>
+        <span class="absolute block bg-black"
+              :class="{'hidden': !isCollapsed}"
+              style="height: 2px; width: 22px; top: 4px"></span>
+        <span class="absolute block bg-black"
+              :class="!isCollapsed? 'transform -rotate-45' : ''"
+              style="height: 2px; width: 22px; top: 10px;"></span>
+        <span class="absolute block bg-black" 
+              :class="!isCollapsed? 'transform rotate-45' : ''"
+              style="height: 2px; width: 22px; top: 10px;"></span>
+        <span class="absolute block bg-black"
+              :class="{'hidden': !isCollapsed}"
+              style="height: 2px; width: 22px; top: 16px;"></span>
       </button>
 
       <nav :class="isCollapsed? 'hidden' : 'block'"
