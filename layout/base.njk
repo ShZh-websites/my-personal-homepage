@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="/tailwind.css">
   <script src="//unpkg.com/alpinejs" defer></script>
   <title>{{ title }}</title>
+  <style>
+    [x-cloak] { display: none !important; }
+  </style>
 </head>
 <body class="h-full">
   <header class="xl:mx-48">
@@ -29,7 +32,7 @@
               style="height: 2px; width: 22px; top: 16px;"></span>
       </button>
 
-      <nav x-show="!isCollapsed"
+      <nav x-cloak :class="isCollapsed? 'hidden' : 'block'"
            class="pl-9 mb-2 space-x-1 sm:pl-16 sm:pt-3 sm:inline-flex" >
         <a href="/">
           <p class="text-md font-light px-3 sm:py-1.5 hover:text-blue-500">Home</p>
