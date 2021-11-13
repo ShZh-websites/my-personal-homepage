@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
             // must return object, otherwise TemplateData cleanupData throws TypeError
             return { text: str };
         }],
+        ["base64", function parse(str) {
+            return { content: str }
+        }]
     ]);
 
     // Set custom directories for input, output, includes, and data
