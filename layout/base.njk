@@ -13,6 +13,9 @@
     [x-cloak] { display: none !important; }
     /* Hard code navigation height */
     .nav-height { height: 236px; }
+    @media (min-width: 640px) {
+      .full_height { height: 100% !important; }
+    }
   </style>
 </head>
 <body class="h-full">
@@ -35,7 +38,7 @@
       </button>
 
       <nav x-cloak :class="isCollapsed? 'h-0' : 'nav-height'"
-           class="pl-9 overflow-hidden sm:pl-16 sm:pt-3 sm:pb-2 sm:inline-flex sm:h-full
+           class="pl-9 overflow-hidden sm:pl-16 sm:pt-3 sm:pb-2 sm:inline-flex full_height
                   transition-height duration-300 ease-out">
         <a href="/">
           <p class="text-md font-light px-3 sm:py-1.5
