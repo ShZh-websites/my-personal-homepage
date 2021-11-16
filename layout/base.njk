@@ -16,6 +16,24 @@
     @media (min-width: 640px) {
       .full_height { height: 100% !important; }
     }
+    /* Octocat animation */
+    @keyframes octocat-wave{
+      0%, 100% {
+        transform:rotate(0)
+      }
+      20%, 60% {
+        transform:rotate(-25deg)
+      }
+      40%, 80% {
+        transform:rotate(10deg)
+      }
+    }
+    .github-corner:hover .octo-arm {
+      animation:octocat-wave 560ms ease-in-out
+    }
+    .github-corner .octo-arm {
+      animation: none;
+    }
   </style>
 </head>
 <body class="h-full">
@@ -67,7 +85,7 @@
       </nav>
     </div>
 
-    <a class="absolute top-0 right-0 h-14 z-10"
+    <a class="absolute github-corner top-0 right-0 h-14 z-10"
        target="_blank" rel="noopener"
        href="https://github.com/ShZh-websites/my-personal-homepage"
        aria-label="View source on Github"
