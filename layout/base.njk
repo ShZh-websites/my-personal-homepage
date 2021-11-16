@@ -11,6 +11,8 @@
   <title>{{ title }}</title>
   <style>
     [x-cloak] { display: none !important; }
+    /* Hard code navigation height */
+    .nav-height { height: 236px; }
   </style>
 </head>
 <body class="h-full">
@@ -32,8 +34,9 @@
               style="height: 2px; width: 22px; top: 16px;"></span>
       </button>
 
-      <nav x-cloak :class="isCollapsed? 'hidden' : 'block'"
-           class="pl-9 mb-2 sm:pl-16 sm:pt-3 sm:inline-flex" >
+      <nav x-cloak :class="isCollapsed? 'h-0' : 'nav-height'"
+           class="pl-9 overflow-hidden sm:pl-16 sm:pt-3 sm:pb-2 sm:inline-flex sm:h-full
+                  transition-height duration-300 ease-out">
         <a href="/">
           <p class="text-md font-light px-3 sm:py-1.5
                     hover:text-blue-500 hover:underline">Home</p>
@@ -55,7 +58,7 @@
         </a>
         <a href="/about.html">
           <p class="text-md font-light
-                    px-3 mt-6 sm:mt-0 sm:ml-1 pb-3 sm:py-1.5
+                    px-3 mt-6 sm:mt-0 sm:ml-1 pb-5 sm:py-1.5
                     hover:text-blue-500 hover:underline">About</p>
         </a>
       </nav>
