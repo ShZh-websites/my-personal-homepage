@@ -52,7 +52,7 @@ These scripts are probably useful when contributing.
 
 There are more features and optimizaiton to be done.
 
-- [ ] i18n support. ([#1](https://github.com/ShZh-websites/my-personal-homepage/issues/1))
+- [ ] ~~i18n support. ([#1](https://github.com/ShZh-websites/my-personal-homepage/issues/1))~~
 - [ ] Dark mode support. ([#2](https://github.com/ShZh-websites/my-personal-homepage/issues/2))
 - [x] Rewrite hamburger button and add animation. ([#3](https://github.com/ShZh-websites/my-personal-homepage/issues/3))
 - [ ] Carrousel for projects' cards. ([#5](https://github.com/ShZh-websites/my-personal-homepage/issues/5))
