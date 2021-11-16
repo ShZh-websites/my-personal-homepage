@@ -16,8 +16,7 @@ permalink: "about.html"
                 <div class="relative w-28 h-28 md:w-32 md:h-32
                             bg-white overflow-hidden cursor-pointer"
                      x-data="{ hover: false }" @mouseover="hover = true" @mouseout="hover = false"
-                     @click="window.open(item.url, '_blank')"
-                >
+                     @click="window.open(item.url, '_blank')">
                     <div class="absolute w-28 h-28 md:w-32 md:h-32
                                 opacity-50 bg-black transition-top duration-300
                     flex justify-center items-center"
