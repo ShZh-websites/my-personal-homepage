@@ -86,6 +86,8 @@
       },
       about: {{ about | dump | safe }}
     };
+    document.querySelector("a[href='"+ window.location.pathname + "']")
+            .classList.add("text-blue-500");
   </script>
 </body>
 </html>
