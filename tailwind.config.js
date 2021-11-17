@@ -9,6 +9,9 @@ module.exports = {
         extend: {
             transitionProperty: {
                 'height': 'height'
+            },
+            boxShadow: {
+                white: '0 4px 14px 0 rgba(255, 255, 255, 1)'
             }
         }
     }
