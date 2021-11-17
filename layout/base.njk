@@ -23,21 +23,21 @@
     .github-corner .octo-arm { animation: none; }
   </style>
 </head>
-<body class="h-full">
-  <header class="xl:mx-48">
+<body class="h-full dark:bg-gray-900">
+  <header class="xl:px-48 dark:bg-gray-800">
     <div x-data="{isCollapsed: true}">
       <button class="relative mt-4 mb-4 ml-12 sm:hidden" style="height: 25px; width: 22px;" aria-label="navigation"
               @click="isCollapsed = !isCollapsed">
-        <span class="absolute block bg-black"
+        <span class="absolute block bg-black dark:bg-white"
               x-show="isCollapsed"
               style="height: 2px; width: 22px; top: 4px"></span>
-        <span class="absolute block bg-black transition-transform"
+        <span class="absolute block bg-black dark:bg-white transition-transform"
               :class="!isCollapsed? 'transform -rotate-45' : ''"
               style="height: 2px; width: 22px; top: 10px;"></span>
-        <span class="absolute block bg-black transition-transform"
+        <span class="absolute block bg-black dark:bg-white transition-transform"
               :class="!isCollapsed? 'transform rotate-45' : ''"
               style="height: 2px; width: 22px; top: 10px;"></span>
-        <span class="absolute block bg-black"
+        <span class="absolute block bg-black dark:bg-white"
               x-show="isCollapsed"
               style="height: 2px; width: 22px; top: 16px;"></span>
       </button>
@@ -47,26 +47,26 @@
            class="pl-9 overflow-hidden sm:pl-16 sm:pt-3 sm:pb-2 sm:inline-flex sm:!h-full
                   transition-height duration-300 ease-out">
         <a href="/">
-          <p class="text-md font-light px-3 pb-3 sm:py-1.5
+          <p class="text-md font-light px-3 pb-3 sm:py-1.5 dark:text-white
                     hover:text-blue-500 hover:underline">Home</p>
         </a>
         <a href="/projects/">
-          <p class="text-md font-light
+          <p class="text-md font-light dark:text-white
                     p-3 sm:ml-1 sm:py-1.5
                     hover:text-blue-500 hover:underline">Projects</p>
         </a>
         <a href="/publications/">
-          <p class="text-md font-light
+          <p class="text-md font-light dark:text-white
                     p-3 sm:ml-1 sm:py-1.5
                     hover:text-blue-500 hover:underline">Publication</p>
         </a>
         <a href="/CV/">
-          <p class="text-md font-light
+          <p class="text-md font-light dark:text-white
                     p-3 sm:ml-1 sm:py-1.5
                     hover:text-blue-500 hover:underline">CV</p>
         </a>
         <a href="/about/">
-          <p class="text-md font-light
+          <p class="text-md font-light dark:text-white
                     p-3 sm:ml-1 sm:py-1.5 pb-5
                     hover:text-blue-500 hover:underline">About</p>
         </a>
@@ -92,7 +92,7 @@
 
   <footer class="pt-3 w-full">
     <hr/>
-    <div class="text-center text-gray-500 pt-3">Copyright ©
+    <div class="text-center text-gray-500 pt-3 dark:text-gray-300">Copyright ©
       <span x-data x-text="new Date().getFullYear()"></span>
       ShZh7
     </div>
@@ -107,7 +107,7 @@
       about: {{ about | dump | safe }}
     };
     document.querySelector("a[href='"+ window.location.pathname + "']")
-            .classList.add("text-blue-500");
+            .classList.add("!text-blue-500");
   </script>
 </body>
 </html>
