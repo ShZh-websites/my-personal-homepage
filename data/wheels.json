@@ -1,6 +1,15 @@
 [
   {
     "img": {
+      "url": "https://res.cloudinary.com/shzh7/image/upload/v1681701210/homepage/sznn_g6somf.avif",
+      "fallback": "https://res.cloudinary.com/shzh7/image/upload/v1681701167/homepage/sznn_tcrnpj.png"
+    },
+    "url": "https://github.com/ShZh-libraries/sznn",
+    "name": "sznn",
+    "summary": "\uD83D\uDE80 High performance NN engine running on Web."
+  },
+  {
+    "img": {
       "url": "https://res.cloudinary.com/shzh7/image/upload/v1636808020/homepage/mandlebrot_uifjtq.avif",
       "fallback": "https://res.cloudinary.com/shzh7/image/upload/v1636808020/homepage/mandlebrot_aow7fl.png"
     },
